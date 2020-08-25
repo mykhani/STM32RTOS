@@ -7,7 +7,7 @@ Real time operating system from scratch (well almost), using the Cortex-M4 based
 ## Roadmap
 - [x] Implement basic Priority based task scheduler.
 - [ ] Add basic I/O drivers
-- [ ] Implement advanced RTOS mechanisms like semaphores, mutexes, priority inversion, message queues, task management.
+- [ ] Implement advanced RTOS mechanisms like memory protection (MPU), semaphores, mutexes, priority inversion, message queues, task management.
 - [ ] Add various middlewares e.g. FAT filesystem, LwIP etc.
 - [ ] Decouple from STM32CubeIDE so that RTOS can be used as a stand-alone library that embedded applications can link against. 
 - [ ] Add the build system (most probably Kconfig based) to configure the RTOS once it grows and offers different configuration options.
