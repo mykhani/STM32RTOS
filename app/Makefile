@@ -1,7 +1,7 @@
 export MACHINE = cortex-m4
 export LINKERSCRIPT = ../platform/stm32f401re/stm32f401re.ld
 export OPENOCD_BOARD_CFG = st_nucleo_f4.cfg
-export USE_SEMIHOSTING = 1
+export USE_SEMIHOSTING = 0
 
 include ../common.mk
 

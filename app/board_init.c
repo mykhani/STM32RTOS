@@ -36,7 +36,7 @@
  */
 #include <gpio.h>
 
-#define SEMIHOSTING_ENABLED	1
+#define SEMIHOSTING_ENABLED	0
 
 #if SEMIHOSTING_ENABLED
 extern void initialise_monitor_handles(void);
