@@ -2,9 +2,9 @@
 
 # STM32 RTOS from scratch
 
-Real time operating system from scratch, using the Cortex-M4 based STM32 Nucleo board and open source developlment tools, for learning purposes. Although it uses STM32 microcontroller, the concepts can beapplied to create RTOS for any Cortex-M4 based boards.
+Real time operating system from scratch, using the Cortex-M4 based STM32 Nucleo board and open source development tools, for learning purposes. Although it uses STM32 microcontroller, the concepts can beapplied to create RTOS for any Cortex-M4 based boards.
 
-# Building the image
+## Building the image
 
 1. Clone the github repo.
 ```
@@ -23,7 +23,7 @@ $ cd STM32RTOS/app
 $ make
 ```
 
-# Flashing the image
+## Flashing the image
 
 The project is using openocd (http://openocd.org/) to flash and debug the target. The openocd server has the STLINK driver for the on-board debugger on Nucleo board.
 To communicate with openocd server and load/debug the firmware image, both GDB and Telnet clients can be used. 
@@ -50,7 +50,7 @@ Info : starting gdb server for stm32f4x.cpu on 3333
 Info : Listening on port 3333 for gdb connections
 ```
 
-## Connecting via GDB openocd client
+### Connecting via GDB openocd client
 
 1. (Connect via GDB) Launch another terminal and launch the ARM gdb from the app directory.
 ```
@@ -70,7 +70,7 @@ $ arm-none-eabi-gdb
 ```
 The target with run with the newly flashed image.
 
-## Connecting via Telnet client
+### Connecting via Telnet client
 
 1. (Connect via Telnet) Here are the same steps done using telnet client.
 ```
