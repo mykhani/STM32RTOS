@@ -1,0 +1,4 @@
+[submodule "third_party/lwip/lwip"]
+	path = third_party/lwip/lwip
+	url = https://github.com/mykhani/lwip.git
+	branch = STABLE-2_1_x
