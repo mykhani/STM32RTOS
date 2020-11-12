@@ -80,6 +80,16 @@ $ telnet localhost 4444
 > reset
 ```
 
+## Semihosting on STM32
+Instructions from https://www.openstm32.org/forumthread2948
+
+1. add “-specs=rdimon.specs -lc -lrdimon” to (Project -> Properties -> C/C++ Build -> Settings -> MCU GCC Linker -> Linker flags)
+2. add extern void initialise_monitor_handles(void); above main
+3. add initialise_monitor_handles(); at the beggening og main function
+4. use printf, putc, puts to output messages via semihosting
+
+Another thing you need to add “monitor arm semihosting enable” to intitialization commands in your debug configuration
+
 ## Using openocd semi-hosting
 To use semi-hosting, follow the below steps.
 
